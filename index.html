@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga da Justiça</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Liga da Justiça</h1>
+    </header>
+
+    <img class="fundo" src="./imagens/JL.jpeg" alt="">
+    <main>
+        <section>
+            <input type="text" placeholder="Digite o nome do Herói da Liga da Justiça..." id="campo-pesquisa">
+
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- <div class="item-resultado">
+                <h2>Superman</h2>
+
+                <img src="./imagens/superman.jpg" alt="" class="imagem-personagem">
+
+                <p class="descricao-meta">
+                    O Superman é um alienígena do planeta Krypton que, após a destruição de seu mundo natal, foi enviado
+                    para a Terra como bebê. Criado por uma família humana em Smallville, Kansas, ele se tornou o
+                    poderoso
+                    super-herói que conhecemos.
+
+                    Com força sobre-humana, invulnerabilidade e a capacidade de voar, o Superman dedica sua vida a
+                    proteger
+                    a humanidade e a lutar pela justiça. Sob a identidade secreta de Clark Kent, um jornalista do
+                    Planeta
+                    Diário, ele equilibra sua vida como super-herói com a de um cidadão comum.
+
+                    Símbolo de esperança e altruísmo, o Superman é um dos personagens mais icônicos da cultura pop,
+                    conhecido por seus valores e sua luta incansável pelo bem.</p>
+
+                <a href="https://www.dc.com/characters/superman" target="_blank">Saiba mais sobre este personagem</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Batman</h2>
+
+                <img src="./imagens/batman.jpg" alt="" class="imagem-personagem">
+                
+                <p class="descricao-meta">
+                    O Batman é um vigilante mascarado que opera em Gotham City. Após testemunhar o assassinato de seus pais, Bruce Wayne jurou vingança contra o crime e se tornou o Batman. Sem superpoderes, ele utiliza sua inteligência, habilidades físicas e uma variedade de gadgets para combater o crime.
+            
+                    Com treinamento em diversas artes marciais e uma fortuna pessoal, Batman é um mestre estrategista e detetive. Sob a identidade secreta de Bruce Wayne, um bilionário filantropo, ele lidera uma dupla vida, equilibrando seus deveres como vigilante com sua vida social.
+            
+                    Símbolo de justiça e determinação, Batman é um dos personagens mais populares da cultura pop. Sua história é marcada pela tragédia, pela vingança e pela busca incansável por um mundo melhor.
+                </p>
+            
+                <a href="https://www.dc.com/characters/batman" target="_blank">Saiba mais sobre este personagem</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Mulher Maravilha</h2>
+
+                <img src="./imagens/ww.jpg" alt="" class="imagem-personagem">
+            
+                <p class="descricao-meta">
+                    A Mulher Maravilha é uma princesa amazona da ilha de Themyscira. Criada para ser uma guerreira perfeita, ela possui força sobre-humana, agilidade e é imortal. Ao descobrir o mundo exterior, Diana Prince, seu alter ego, se torna uma embaixadora das amazonas e uma defensora da paz e da justiça.
+            
+                    Com um laço da verdade, um bracelete indestrutível e um avião invisível, a Mulher Maravilha é uma das heroínas mais poderosas da DC Comics. Sua história explora temas como feminismo, empoderamento feminino e a busca por um mundo mais justo.
+                </p>
+            
+                <a href="https://www.dccomics.com/characters/wonder-woman" target="_blank">Saiba mais sobre esta personagem</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Flash</h2>
+
+                <img src="./imagens/flash.jpg" alt="" class="imagem-personagem">
+            
+                <p class="descricao-meta">
+                    O Flash, também conhecido como Barry Allen, é o homem mais rápido vivo. Atingido por um raio durante uma tempestade química, ele ganhou a habilidade de se mover a velocidades supersônicas. Como o Flash, ele protege Central City de ameaças sobrenaturais e meta-humanas. 
+            
+                    Além de sua super velocidade, o Flash possui a habilidade de vibrar suas moléculas para atravessar objetos sólidos e até mesmo viajar no tempo. Com um senso de justiça inabalável, ele é um dos membros fundadores da Liga da Justiça.
+                </p>
+            
+                <a href="https://www.dccomics.com/characters/the-flash" target="_blank">Saiba mais sobre este personagem</a>
+            </div>
+            
+
+            <div class="item-resultado">
+                <h2>Lanterna Verde</h2>
+
+                <img src="./imagens/lv.jpg" alt="" class="imagem-personagem">
+            
+                <p class="descricao-meta">
+                    Os Lanternas Verdes são um grupo de alienígenas que utilizam anéis de poder para criar construtos de energia verde. Cada Lanterna Verde é escolhido por sua força de vontade e recebe um anel que permite moldar a energia verde de acordo com sua imaginação. 
+            
+                    Hal Jordan é um dos Lanternas Verdes mais conhecidos. Como piloto de teste, ele foi escolhido para proteger o setor espacial 2814, que inclui a Terra. Com seu anel de poder, Hal pode criar construtos de qualquer forma ou tamanho, desde armas até veículos.
+                </p>
+            
+                <a href="https://www.dccomics.com/characters/green-lantern" target="_blank">Saiba mais sobre este personagem</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Cyborg</h2>
+
+                <img src="./imagens/victor.jpg" alt="" class="imagem-personagem">
+            
+                <p class="descricao-meta">
+                    Cyborg, ou Victor Stone, era um atleta promissor até um trágico acidente que quase o matou. Para salvá-lo, seu pai, um cientista, o reconstruiu com tecnologia alienígena, transformando-o em um ciborgue. 
+            
+                    Com partes mecânicas e orgânicas, Cyborg possui força sobre-humana, a capacidade de se conectar a qualquer sistema tecnológico e uma variedade de armas e ferramentas embutidas em seu corpo. Como membro da Liga da Justiça, ele utiliza suas habilidades para proteger o mundo de ameaças tecnológicas.
+                </p>
+            
+                <a href="https://www.dccomics.com/characters/cyborg" target="_blank">Saiba mais sobre este personagem</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>Aquaman</h2>
+
+                <img src="./imagens/aquaman.jpg" alt="" class="imagem-personagem">
+            
+                <p class="descricao-meta">
+                    Aquaman, ou Arthur Curry, é o meio-humano, meio-atlante rei de Atlântida. Com a habilidade de se comunicar com todas as criaturas marinhas e respirar debaixo d'água, ele governa os sete mares e é um defensor tanto do mundo submarino quanto da superfície. 
+            
+                    Além de seus poderes aquáticos, Aquaman possui força sobre-humana e é um combatente habilidoso. Ele utiliza um tridente mágico como sua principal arma e é um membro fundamental da Liga da Justiça.
+                </p>
+            
+                <a href="https://www.dccomics.com/characters/aquaman" target="_blank">Saiba mais sobre este personagem</a>
+            </div> -->
+        </section>
+    </main>
+
+    <!-- <aside class="menu-lateral">
+        <ul>
+            <li class="item-dc">
+                <a href="https://www.dc.com/comics" target="_blank">
+                    <img src="./imagens/DC_Comics_logo.png" alt="DC comics" class="iconedc">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Caio-Hnovaes" target="_blank">
+                    <img src="./imagens/github.svg" alt="Perfil Github" class="icone">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/caio-henrique-03bb7322b/" target="_blank">
+                    <img src="./imagens/linkedin-in.svg" alt="Perfil Linkedin" class="icone">
+                </a>
+            </li>
+        </ul>
+    </aside> -->
+
+    <aside class="menu-lateral">
+        <ul>
+            <li class="item-dc">
+                <a href="https://www.dc.com/comics" target="_blank">
+                    <img src="./imagens/logodc.png" alt="DC comics" class="iconedc">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Caio-Hnovaes" target="_blank">
+                    <img src="./imagens/github.svg" alt="Perfil Github" class="icone">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/caio-henrique-03bb7322b/" target="_blank">
+                    <img src="./imagens/linkedin-in.svg" alt="Perfil Linkedin" class="icone">
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Liga da Justiça. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email exemplodeemail@gmail.com</p>
+    </footer>
+
+    <script src="./dados.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
